@@ -1,4 +1,8 @@
 # Temp_Name
+Final Project for CSDS290.
+
+## Development 
+Clone the repo, then open the "game" folder within "src" in Unity Hub. The project should show up.
 
 ## Game Idea (as of now)
 This game will be a puzzle game. The connecting theme is "winter/snow". There 
