@@ -1,0 +1,17 @@
+src/game/[Ll]ibrary/
+src/game/[Uu]serSettings/
+src/game/[Tt]emp/
+src/game/[Oo]bj/
+src/game/[Bb]uild/
+src/game/[Bb]uilds/
+src/game/[Ll]ogs/
+src/game/[Mm]emoryCaptures/
+
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+*.DS_Store
+*.vscode
+
+*.sln
