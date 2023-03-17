@@ -3,6 +3,7 @@ Final Project for CSDS290.
 
 ## Development 
 Clone the repo, then open the "game" folder within "src" in Unity Hub. The project should show up.
+95% of the important stuff (and 100% of the stuff used in-game) will be the src/game/ folder, everything else is just to help with organization.
 
 ## Game Idea (as of now)
 This game will be a puzzle game. The connecting theme is "winter/snow". There 
