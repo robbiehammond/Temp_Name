@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    public float speed = 100.0f;
+    public float speed;
     private PlayerInfo playerInformation = PlayerInfo.Instance;
     public Animator animator;
     
@@ -33,15 +33,13 @@ public class PlayerMovement : MonoBehaviour
             triggerAnimator(playerInformation.getLastDirection());
 
 
-        Vector2 delta = new Vector2(deltaX, deltaY);
+        Vector2 delta = new Vector2(deltaX , deltaY);
 
-        //Debug.Log(playerInformation.getLastDirection());
+        //make it FPS invariant - doesn't work this way when setting velocity!: https://gamedev.stackexchange.com/questions/141720/unity-2d-why-does-my-character-stutter-if-i-add-deltatime-to-movespeed
+        //delta *= Time.deltaTime;
 
-        //make it FPS invariant
-        delta *= Time.deltaTime;
-
-        //set velocity to that change
-        rb2d.velocity = delta;
+        //set position (FPS invariant)
+        rb2d.position = rb2d.position + delta * Time.deltaTime;
 
 
         prevDeltaX = deltaX;
