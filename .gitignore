@@ -10,6 +10,7 @@ src/game/[Mm]emoryCaptures/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
+*.pyc
 
 *.DS_Store
 *.vscode
